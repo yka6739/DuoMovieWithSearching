@@ -1,0 +1,21 @@
+﻿<h3>MovieList</h3>
+@inject Services Ser
+
+
+
+<div class="movie-container">
+
+    <Loop D1="d"/>
+
+
+</div>
+
+@code {
+
+    private List<Datas> d;
+    protected override void OnInitialized()
+    {
+        d=Ser.GetData();
+    }
+
+}
